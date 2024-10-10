@@ -26,6 +26,31 @@ img{
   margin: 40px auto;
 }
 
+.img-right {
+  float: right;
+  margin:10px 0 10px 0;
+  border:1px solid #ccc;
+  padding:5px;
+  border-radius:50px;
+}
+
+.img-left {
+  float: left;
+  margin:10px 0 10px 0;
+  border:1px solid #ccc;
+  padding:5px;
+  border-radius:50px;
+}
+
+.img-center {
+  display:block;
+  margin:20px auto;
+  border:1px solid #ccc;
+  padding:5px;
+  border-radius:50px;
+}
+
+
 /*  ---------------Global Styles-----------------  */
 
 body{
@@ -144,6 +169,61 @@ time.post-date, figcaption{
 #content article.post figure{
   margin:0;
 }
+
+
+#practice h2{
+  color:#2FED48;
+  botder-bottom: 1px dotted #84F5B8;
+}
+
+#practice a{
+  color: #61ED2F;
+  transition:.4s;
+}
+
+#practice a:hover{
+text-decoration:none;
+transition:.4s;
+}
+
+
+#practice h3{
+  border-left:7.5px solid #61ED2F;
+  padding:3.5px 10px;
+
+}
+
+table{
+  width:100;
+  border: 1px solid #cccccc;
+  margin:20px 0;
+  border-collapse:collapse;
+}
+caption{
+  font-weight:bold;
+  margin:10px;
+
+}
+tr:nth-child(even){
+  background-color:rgba(0, 0, 0, 0.2);
+}
+tr:hover{
+  background-color: rgba(0, 0, 0, 0.4);
+}
+td:nth-child(n + 2){
+  text-align:right;
+}
+th{
+  background-color: #2FED88;
+  color: #fff;
+  padding:7.5px;
+}
+td{
+  border:1px solid #ccc;
+  padding:5px;
+}
+
+
 
 aside[role="complementary"]{
   background-color: #2FD3ED;

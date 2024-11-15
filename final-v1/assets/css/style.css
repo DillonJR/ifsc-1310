@@ -1,0 +1,99 @@
+/*
+Color Theme
+#714BB3
+#655089
+#7437DE
+#4F475E
+#302E34
+#333038
+*/
+
+/* ------------- Box Sizing --------------- */
+
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+/* ------------- Utility Styles ------------ */
+
+
+/* ------------- Global Styles ------------ */
+
+body {
+    font-family: "Audiowide", sans-serif;
+    margin: 0;
+}
+
+header.primary {
+    background-color: #4F475E;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px #000;
+    padding: 6em 2em;
+    position: relative;
+}
+
+header.primary::before {
+    content: "";
+    background-image: ;
+    background-size: cover;
+    position:absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.4;
+}
+
+header.primary h1 {
+    font-size: 3.2rem;
+    margin: 20px 0;
+    position: relative;
+}
+
+header.primary h2 {
+    font-family: "Audiowave", cursive;
+    font-size: 2em;
+    margin: 20px auto 40px;
+    position: relative;
+}
+
+header.primary nav ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0;
+    max-width: 900px;
+    margin: 20px auto;
+  }
+  
+  header.primary nav li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    padding: 0;
+    width: 20%;
+  }
+  
+  header.primary nav a:link,
+  header.primary nav a:visited {
+    color: white;
+    text-decoration: none;
+    background-color: #000000;
+    background-color: rgba(142, 166, 184, 0.4);
+    padding: 8px 16px;
+    border-radius: 10px;
+    transition: 0.6s;
+    display: block;
+  }
+  
+  header.primary nav a:hover,
+  header.primary nav a:active {
+    background-color: rgba(51, 83, 107, 0.8);
+  }

@@ -22,6 +22,20 @@ html {
 
 /* ------------- Utility Styles ------------ */
 
+.container {
+    width: 80vw;
+    margin: 40px auto;
+    max-width: 900px;
+}
+
+
+
+/* ------------- Responsive Images ------------ */
+
+img {
+    max-width:100%;
+    height: auto;
+}
 
 /* ------------- Global Styles ------------ */
 
@@ -41,7 +55,7 @@ header.primary {
 
 header.primary::before {
     content: "";
-    background-image: ;
+    background-image: url(ADD IMAGE URL HERE);
     background-size: cover;
     position:absolute;
     top: 0px;
@@ -56,6 +70,18 @@ header.primary h1 {
     margin: 20px 0;
     position: relative;
 }
+
+header.primary h1 a {
+    color: #ffffff;
+    background-image: url("add logo image url");
+    display: block;
+    width: 460px;
+    height: 70px;
+    margin: 0 auto;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
 
 header.primary h2 {
     font-family: "Audiowave", cursive;
@@ -74,15 +100,15 @@ header.primary nav ul {
     margin: 20px auto;
   }
   
-  header.primary nav li {
+header.primary nav li {
     list-style-type: none;
     margin-bottom: 10px;
     padding: 0;
     width: 20%;
   }
   
-  header.primary nav a:link,
-  header.primary nav a:visited {
+header.primary nav a:link,
+header.primary nav a:visited {
     color: white;
     text-decoration: none;
     background-color: #000000;
@@ -93,7 +119,157 @@ header.primary nav ul {
     display: block;
   }
   
-  header.primary nav a:hover,
-  header.primary nav a:active {
+header.primary nav a:hover,
+header.primary nav a:active {
     background-color: rgba(51, 83, 107, 0.8);
   }
+
+  /* ------------- Content ------------ */
+
+section#content h2{
+    font-family: "Audiowave", cursive;
+    font-size: 2.2em;
+    color: #714BB3;
+    text-align:center;
+  }
+
+   /* ------------- Articles ------------ */
+
+section#articles {
+    background: #4F475E;
+   }
+
+section#articles .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #c0c0c0;
+    padding: 0 0 4em 0;
+   }
+
+section#articles h2,
+#content h2 {
+    flex: 0 0 100%;
+    color: #714BB3;
+    text-align: center;
+    font-family: "Audiowave", cursive;
+    font-size: 2em;
+}
+
+section#articles h2 {
+    color: #fff;
+    text-shadow: 2px 2px #000;
+   }
+
+#articles article.post {
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    transition: 0.6s;
+    font-size: 0.8rem;
+    border-radius: 10px;
+    background: #fff;
+}
+
+#articles article.post h2 {
+    font-size: 1.5em;
+    text-shadow: none;
+   }
+
+#articles article.post:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+   }
+
+#articles article time,
+#articles article figcaption,
+#articles article footer {
+    font-size: 0.8em;
+    color: #c0c0c0;
+    text-transform: uppercase;
+   }
+
+#articles .post a:link,
+#articles .post a:visited {
+    color: #655089;
+   }
+
+#articles .post figure {
+    margin: 0;
+   }
+
+#articles .post img {
+    border-radius: 10px;
+   }
+
+#articles ul{
+    padding: 0 20px;
+   }
+
+#articles li {
+    margin-bottom: 20px;
+   }
+
+   /*--------------- Launch --------------*/
+
+#launch {
+    padding: 4em 0;
+   }
+
+   /*--------------Aside-------------------*/
+
+
+
+   /*--------------Footer-------------------*/
+
+footer#colophon {
+    background-color: #333038;
+}
+
+#colophon h6 {
+    padding: 20px;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+#colophon h6 a:link,
+#colophon h6 a:visited {
+    color: #fff;
+}
+
+   /*--------------Media Queries-------------------*/
+
+   @media screen and (max-width: 600px) {
+    header.primary nav ul {
+      flex-direction: column;
+      margin: 0 auto;
+      width: 400px;
+    }
+  
+    header.primary nav ul li {
+      margin-bottom: 10px;
+      width: 400px;
+    }
+  
+    header.primary nav ul li a {
+      display: block;
+    }
+  
+    section#articles .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #c0c0c0;
+      padding: 0 0 4em 0;
+    }
+  
+    #articles article.post {
+      width: 100%;
+      margin-bottom: 2em;
+    }
+  }
+  
